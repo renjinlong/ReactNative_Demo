@@ -27,7 +27,6 @@ export default class LaunchScreen extends Component {
 		}).catch(err => {
 			this.goToTabPage();
 		});
-
 	}
 
 	/**

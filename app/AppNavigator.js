@@ -53,7 +53,7 @@ export default class AppWithNavigationState extends Component {
 
     componentDidMount() {
         /* 隐藏启动屏幕 */
-        // SplashScreen.hide();
+        SplashScreen.hide();
     }
 
     /**
