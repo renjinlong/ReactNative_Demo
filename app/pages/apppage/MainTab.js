@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import { TabNavigator } from 'react-navigation';
 import { Platform } from 'react-native';
-// import DeviceInfo from 'react-native-device-info';
+import DeviceInfo from 'react-native-device-info';
 
 import * as theme from '../../config/theme.conf';
 
@@ -46,7 +46,7 @@ const MainTab = TabNavigator({
             labelStyle: {
                 fontSize: 11,
                 lineHeight: 11,
-                // marginTop: Platform.OS === 'ios' && DeviceInfo.getSystemVersion().split('.')[0] > 9 ? 14 : 0,
+                marginTop: Platform.OS === 'ios' && DeviceInfo.getSystemVersion().split('.')[0] > 9 ? 14 : 0,
             },
             iconStyle: {
                 width: px(750),
